@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.embedly-embed {
+  position: relative;
+  width: 100%;
+}
+.home-col h2 {
+  color: #00172e;
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 600;
+}
+.navbar {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.videos-headline h4 {
+  font-size: 18px;
+  color: #00151f;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+.btnBx {
+  color: #002538;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  position: relative;
+}

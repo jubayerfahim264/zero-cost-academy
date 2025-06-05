@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #ff4c60;
+  --secondary-color: #65ebe7;
+  --titles-color: #454360;
+  --black-color: #4b4870;
+  --text-color: #596172;
+  --border-color: #ffffff;
+  --input-bg-color: #f9f9fe;
+  --josefine-font: "Josefin Sans", sans-serif;
+  --source-serif: "Source Serif 4", serif;
+}
+body {
+  background: #f9f9fe;
+}
+.mainPost {
+  width: 650px;
+  position: relative;
+  margin-left: 20px;
+}
+.postOne {
+  position: relative;
+  width: 100%;
+  box-shadow: 1px 1px 10px #eee;
+  background-color: var(--border-color);
+  padding: 25px;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+.bimg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 5px solid var(--main-color);
+}
+.bimg img {
+  padding: 1px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid white;
+}
+.bContent h2 {
+  font-size: 30px;
+  font-family: var(--josefine-font);
+  color: var(--titles-color);
+  line-height: 40px;
+}
+.bContent p {
+  color: var(--text-color);
+  font-size: 16px;
+  font-family: var(--source-serif);
+}
+
+.postOne p {
+  color: var(--text-color);
+  font-size: 16px;
+  font-family: var(--source-serif);
+  line-height: 28px;
+}
+.pbtnHover {
+  display: inline-block;
+  background: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+  box-shadow: 3px 3px 6px #5959592e;
+  margin: 0.5rem 0.4rem;
+  font-size: 16px;
+  font-family: var(--josefine-font);
+  color: #596172;
+}
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainPost {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .postBottom {
+    display: block;
+  }
+  .bimg {
+    margin: 1rem 0;
+  }
+  .bContent h2 {
+    margin: 1.5rem 0;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+}
+/* Main Post design end */
+.aside {
+  position: absolute;
+  top: 12%;
+  left: 63%;
+}
+.asideTitle {
+  font-family: var(--josefine-font);
+  color: #303642;
+}
+.borderBx {
+  position: relative;
+  width: 100%;
+}
+.borderBx::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 150px;
+  border-top: 6px double var(--main-color);
+  padding: 1px;
+}
+.asideHeadline {
+  font-family: var(--josefine-font);
+  font-size: 16px;
+  color: var(--titles-color);
+}
+.asidetext {
+  font-family: var(--source-serif);
+  font-size: 14px;
+  color: var(--text-color);
+}
+@media only screen and (max-width: 992px) {
+  .aside {
+    position: relative;
+    left: 0;
+    overflow: hidden;
+  }
+  .asideHeadline,
+  .asidetext {
+    margin: 0.5rem 0;
+  }
+}
